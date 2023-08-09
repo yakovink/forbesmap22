@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+   <head>
+    <script src="https://kit.fontawesome.com/03aa9984c2.js" crossorigin="anonymous"></script>
+    <script src="https://d3js.org/d3.v4.js"></script>
+    <script src="https://d3js.org/d3-scale-chromatic.v1.min.js"></script>
+
+    
+   </head>
+   <body style="background-color:#AAD3DF">
+      <div class="leaflet-sidebar-pane active" id="myDataViz">
+         <h2 id="vizTitle"></h2>
+         <div class="d3Chart" id="genderChart">
+         <h3 id="genderChartTitle">Division by gender</h3>
+         </div>
+         <div class="d3Chart" id="ageChart">
+            <h3 id="ageChartTitle">Division by age</h3>
+         </div>
+      </div>
+      <div class="leaflet-sidebar-pane active" id="myBillionersList">  </div>
+      <div class="leaflet-sidebar-pane active" id="filterPane">   </div>
+      <div id = "map" style = "width:1880px; height:900px;">
+         <div id="sidebar" class="leaflet-sidebar collapsed">
+
+            <!-- nav tabs -->
+            <div class="leaflet-sidebar-tabs">
+                <ul role="tablist">
+                </ul>
+            </div>
+    
+            <!-- panel content -->
+            <div class="leaflet-sidebar-content">
+            </div>
+        </div>
+      
+      </div>
+         
+      <script type="module" src="main.js"></script>
+   </body>
+</html>
